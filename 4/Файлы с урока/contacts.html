@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="utf-8">
+   <title>Каталог</title>
+   <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<ul>
+		<li> <a href="index.html">Главная</a> </li>
+		<li> <a href="catalogue.html">Каталог</a> </li>
+		<li> Контакты </li>
+	</ul>
+	<hr>
+	<h2>Напишите нам</h2>
+	
+	<form action="mailto:alexandr.erofeew@gmail.com" name="test" method="post">
+		<fieldset>
+			<legend>Форма обратной связи</legend>
+			<p> <input type="text" name="text" size="40" placeholder="Введите имя" required> </p>
+			<p> <input type="email" name="email" size="40" placeholder="Введите email" required> </p>
+			<p> <input type="text" name="text2" size="40" placeholder="Введите текст" required> </p>
+			<p> <textarea rows="8" cols="41" name="text" placeholder="Введите коментарий"></textarea> </p>
+			<p> 
+				<input type="reset" value="Сбросить">
+				<input type="submit" value="Отправить"> 
+			</p>
+		</fieldset>
+	</form>
+	
+	<h2>Адрес организации</h2>
+	<!-- Микроразметка -->
+	<div itemscope itemtype="http://schema.org/Organization">
+		<span itemprop="name">Название организации</span> <br />
+		Контакты:
+		<div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+		Адрес:
+		<span itemprop="streetAddress">Улица, номер</span>
+		<span itemprop="postalCode"> 111000</span>
+		<span itemprop="addressLocality">Санкт-Петербург</span>,
+	</div>
+		Телефон:<span itemprop="telephone">+7 812 000–00–00</span>,
+		Электронная почта: <span itemprop="email">html@geekbrains.ru</span>
+	</div>
+	
+	
+	
+	<!--  -->
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31984.81612541121!2d30.35089253552798!3d59.93129577174349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x802c95ba7616e18e!2z0KHQvNC-0LvRjNC90YvQuSDQodC-0LHQvtGA!5e0!3m2!1sru!2sru!4v1470842213161" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+	<hr>
+	
+	<footer>
+		<p>	&copy; Все права защищены</p>
+	</footer>
+
+</body> 
+</html>

@@ -1,0 +1,136 @@
+body {
+	background-color: #f8f8f8;
+}
+
+ul {
+	list-style: none;
+}
+
+li a, li {
+	color: grey;
+	text-decoration: none;
+	font-family: verdana;
+	font-size: 14px;
+}
+
+li {
+	color: black;
+}
+
+h4 {
+	color: black;
+	font-size: 18px;
+	font-weight: 400;
+	background-color: #eaeaea;
+	width: 250px;
+}
+
+.short_description {
+	color: #707070;
+	font-size: 14px;
+	font-style: italic;
+	line-height: 16px;
+}
+
+.full_description {
+	color: #484343;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	text-align: left;
+}
+
+.spec_1 {
+	/* list-style-image: url(img/spec.png); */
+	list-style-type: upper-roman;
+	color: blue;
+	font-size: 20px;
+	font-family: arial;
+}
+
+input[type=email], input[type=text] {
+	width: 300px;
+	height: 30px;
+}
+
+input {
+	color: green;
+	font-size: 16px;
+	font-style: italic;
+}
+
+img {
+	border: 2px solid black;
+	padding: 20px;
+	background: grey;
+}
+
+
+
+
+/* ---------------------на уроке------------- */
+li a:hover {
+	color: green;	
+}
+
+a:link {
+    color: #00F;
+}
+
+a:visited {
+    color: #F00;
+    font-family: Arial;
+}
+a:active {
+    color: #CCC;
+}
+
+ul li:first-child {
+	font-size:30px;	
+}
+
+.parent {
+	
+	width: 200px;
+	height:60px;
+	background-color: red;
+}
+
+.child {
+	width: 100px;
+	height:30px;
+	background-color: black;
+}
+
+.parent:hover .child{
+background-color: blue;
+}
+
+p:first-letter {
+	font-size: 30px;
+}
+
+table, tr, td {
+	border: 1px solid black;
+}
+
+table {
+	width: 400px;
+	height: 200px;
+	border-spacing: 5px 10px; 
+	padding: 7px 10px;
+}
+
+div, span {
+	border: 1px solid black;
+}
+
+
+
+
+
+
+
+
+
+

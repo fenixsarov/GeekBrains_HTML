@@ -1,0 +1,21 @@
+body {
+    color: blue;
+    background: #f8f8f8;
+}
+h1 {
+    text-align: center;
+}
+#first {
+    background: #ccc;
+}
+
+.border {
+    border: 1px solid black;
+}
+
+img[alt] {
+    width: 50px;
+}
+input[type="text"] {
+    font-size: 10px;
+}

@@ -1,0 +1,223 @@
+body {
+    margin: 15px auto;
+    background: #f8f8f8;
+    font-family: Arial, "MS Trebuchet", sans-serif;
+    width: 960px;
+    height: 100%;
+}
+
+p {
+    margin: 0 0 20px 0;
+}
+
+p, li {
+    line-height: 20px;
+}
+
+#page_header {
+    width: 100%;
+    text-align: center;
+    background: #f8f8f8;
+}
+
+#page_header > nav {
+    /*border: 1px solid black;*/
+    border-radius: 5px;
+    height: 62px;
+    background: #ddd;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0 3px 10px 1px rgba(0,0,0,.1);
+}
+
+h1 {
+    padding: 3px;
+}
+
+h1, h3 {
+    font-weight: 600;
+}
+
+nav li  {
+    height: auto;
+    width: 150px;
+    text-align: center;
+    list-style: none;
+    font:12px "Bonveno", "Century Gothic";
+    padding: 0;
+    margin: 0;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 1px 0 rgba(255,255,255, 0.9) , 0 1px 3px rgba(0,0,0, 0.1);
+    border-radius: 3px;
+
+}
+
+#page_header > nav > ul {
+    padding: 10px 0 0 10px ;
+}
+
+#page_header > nav > ul > li > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0 ;
+
+}
+
+#page_header > nav > ul > li {
+    margin: 0 20px 0 0 ;
+    padding: 0;
+    display: inline-table;
+}
+
+.posts {
+    float: right;
+    width: 100%;
+    padding: 10px;
+}
+
+#posts_catalog {
+    float: right;
+    width: 75%;
+    padding: 10px;
+}
+
+.posts aside {
+    float: right;
+    font-size: 20px;
+    line-height: 10px;
+    text-align: justify;
+    padding: 10px 10px 0;
+    margin-left: 1%;
+    max-width: 40%;
+    width: auto;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
+    background-color: #f3f3f3;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+#sidebar {
+    width: 25%;
+}
+
+#sidebar > nav > ul > li {
+    list-style: none;
+    margin: 0 0 15px 0;
+}
+
+/*nav a{
+    padding:13px;
+    text-decoration: none;
+    color:#333;
+    text-shadow: 0 1px #fff;
+    display: block;
+    font-size: 13px;
+}*/
+
+#sidebar > nav > ul > li > a,
+#sidebar > nav > ul > li > ul > li > a,
+#page_header > nav > ul > li > a,
+#page_header > nav > ul > li > ul > li > a {
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: "Bonveno", "Century Gothic", Verdana;
+    color:#333;
+    padding: 0 20px;
+    line-height: 40px;
+    display: block;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    list-style: none;
+    background: #aaa;
+}
+
+nav li ul {
+    display: none;
+    height: auto;
+    padding: 0;
+}
+
+.sidebar-menu li ul {
+    margin: -40px 0 0 152px;
+}
+
+nav ul li:hover {
+    background: #aaa;
+    box-shadow:  0px 0px 3px 1px rgba(0, 0, 0, 0.2);
+}
+
+nav ul li:hover > ul {
+    display:  block;
+    box-shadow:  0px 3px 3px 1px rgba(0, 0, 0, 0.2);
+}
+
+
+
+nav ul li ul li {
+    text-align: center;
+}
+
+nav ul li:hover > ul li:hover {
+    box-shadow:  0px 0px 3px 1px rgba(0, 0, 0, 0.2);
+}
+
+#page_header nav li:hover, #sidebar nav li:hover, a:hover {
+    background: #e8e8e8;
+}
+
+#page_footer {
+    position: fixed;
+    bottom: 0;
+    display: block;
+    text-align: center;
+    width: inherit;
+}
+
+h2 {
+    display: none;
+}
+
+#long_text {
+    font-size: 15px !important;
+}
+
+#sidebar nav h3 {
+    text-align: center;
+    padding-left: 20px;
+}
+
+.menu_catalog ul {
+    content: center;
+}
+
+.menu_catalog li{
+    border: 1px solid #ccc ;
+    display: inline-table;
+    list-style: none;
+    box-shadow: 0 0 3px 1px rgba(0,0,0,0.2);
+    align-content: center;
+}
+
+.product_short_desc {
+    color: #707070;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+}
+
+.product_desc {
+    color: #484343;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+ol li{
+    list-style-image: url(img/marker.png);
+}

@@ -1,0 +1,120 @@
+body {
+    margin: 15px auto;
+    background: #f8f8f8;
+    font-family: Arial, "MS Trebuchet", sans-serif;
+    width: 960px;
+}
+
+p {
+    margin: 0 0 20px 0;
+}
+
+p, li {
+    line-height: 20px;
+}
+
+#page_header {
+    width: 100%;
+    text-align: center;
+    background: #f8f8f8;
+    /* box-shadow: 0 3px 10px 1px rgba(0,0,0,.1); */
+}
+
+h1 {
+    padding: 3px;
+}
+
+#page_header > nav > ul, #page_header > nav > ul > li > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#page_header > nav > ul > li {
+    margin: 0 20px 0 0 ;
+    padding: 0;
+    display: inline-table;
+}
+
+#posts {
+    float: right;
+    width: 74%;
+}
+
+#posts aside {
+    float: right;
+    font-size: 20px;
+    line-height: 10px;
+    margin-left: 5%;
+    width: 40%;
+    border: 1px solid gray;
+    box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.6)
+}
+
+#sidebar {
+    float: left;
+    width: 25%;
+}
+
+#sidebar > nav > ul > li {
+    list-style: none;
+    margin: 0 0 10px 0
+}
+
+#sidebar > nav > ul > li > a, #page_header > nav > ul > li > a,
+#page_header > nav > ul > li > ul > li > a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Arial", Verdana;
+    color: #000080;
+    padding: 0 20px;
+    line-height: 40px;
+}
+
+nav ul ul {
+    display: none;
+}
+
+nav ul li:hover {
+    background: rgba(0, 0, 0, 0.15);
+    box-shadow:  0px 3px 3px 0px rgba(0, 0, 0, 0.2);
+}
+
+nav ul li:hover > ul {
+    display:  block;
+    box-shadow:  0px 3px 3px 0px rgba(0, 0, 0, 0.3);
+}
+
+
+#page_footer {
+    position: fixed;
+    bottom: 0;
+    display: block;
+    text-align: center;
+    width: inherit;
+}
+
+/*ul.menu {
+    margin: 0;
+    padding: 3px;
+   }
+
+ul.menu li {
+    display: inline;
+    margin-right: 4px;
+    padding: 3px;
+}
+
+ul.sidebar-menu li {
+    list-style-type: none;
+}
+
+ul.menu li a, ul.sidebar-menu li a {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Arial", Verdana;
+    text-decoration: none;
+
+}*/

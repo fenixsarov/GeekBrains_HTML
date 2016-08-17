@@ -25,7 +25,9 @@ p, li {
     width: 100%;
     text-align: center;
     /* background: #f8f8f8; */
-    background-image: url(img/header_warp.jpg);
+    background-image: url(img/header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     border: 2px solid black;
     border-radius: 3px;
 }
@@ -293,4 +295,109 @@ td[colspan], td[rowspan] {
     font-size: 115%;
     color: #f8f8f8;
     background: black;
+}
+
+/* экспериментальная штука с изменением расчёта отступов */
+#page_header {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper_slider {
+    height: 100px;
+    margin: 10px auto 0;
+    position: relative;
+    width: 850px;
+    margin-bottom: 50px ;
+}
+
+.slider {
+    background: #ddd;
+    height: inherit;
+    width: inherit;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.wrapper_slider > input {
+    display: none;
+}
+
+.slides {
+    height: inherit;
+    width: inherit;
+    position: absolute;
+    opacity: 0;
+    z-index: 0;
+    transform: translateY(0px);
+    transition: transform ease-in-out 0.5s, opacity ease-in-out 0.5s;
+}
+
+.slide_1 {
+    background-image: linear-gradient(90deg, grey, white);
+}
+
+.slide_2 {
+    background-image: linear-gradient(90deg, green, white);
+}
+
+.slide_3 {
+    background-image: linear-gradient(90deg, red, white);
+}
+
+.slide_4 {
+    background-image: linear-gradient(90deg, yellow, white);
+}
+
+.slide_5 {
+    background-image: linear-gradient(90deg, purple, white);
+}
+
+.wrapper_slider .controls {
+    left: 50%;
+    margin-left: -98px;
+    position: absolute;
+}
+
+.wrapper_slider label {
+    cursor: pointer;
+    display: inline-block;
+    height: 8px;
+    width: 8px;
+    margin: 25px 12px 0 16px;
+    position: relative;
+    border-radius: 50%;
+    transition: background ease-in-out 0.5s;
+}
+
+.wrapper_slider label:after {
+    border: 2px solid #ddd;
+    content: " ";
+    display: block;
+    height: 12px;
+    width: 12px;
+    left:  -4px;
+    top: -4px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.wrapper_slider label:hover,
+#slide_1:checked ~ .controls label:nth-of-type(1),
+#slide_2:checked ~ .controls label:nth-of-type(2),
+#slide_3:checked ~ .controls label:nth-of-type(3),
+#slide_4:checked ~ .controls label:nth-of-type(4),
+#slide_5:checked ~ .controls label:nth-of-type(5) {
+    background: #ddd;
+}
+
+#slide_1:checked ~ .slider > .slide_1,
+#slide_2:checked ~ .slider > .slide_2,
+#slide_3:checked ~ .slider > .slide_3,
+#slide_4:checked ~ .slider > .slide_4,
+#slide_5:checked ~ .slider > .slide_5 {
+    opacity: 1;
+    z-index: 1;
+    transform: translateX(0px);
 }

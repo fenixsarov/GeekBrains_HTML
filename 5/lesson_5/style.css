@@ -1,0 +1,463 @@
+/** {
+    border: 1px solid black;
+}*/
+
+html {
+    min-height: 100%;
+    height: auto;
+}
+
+body {
+    margin: 15px auto;
+    width: 960px;
+    height: 100%;
+    background-image: linear-gradient(180deg, #190337, grey, lightgrey);
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-family: Arial, "MS Trebuchet", sans-serif;
+}
+
+p {
+    margin: 0 0 20px 0;
+}
+
+p, li {
+    line-height: 20px;
+}
+
+#page_header {
+    width: 100%;
+    /*b.    Задать блоку с классом header значение  высоты.*/
+    height: auto;
+    text-align: center;
+    background-image: url(img/header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 2px solid black;
+    border-radius: 3px;
+}
+
+#page_header > nav {
+    border-radius: 5px;
+    height: 62px;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    padding: 3px;
+    text-align: left;
+    padding-left: 5%;
+    color: #eee;
+}
+
+h1, h3 {
+    font-weight: 600;
+    border: 0;
+}
+
+nav li,menu li {
+    height: auto;
+    width: 150px;
+    text-align: center;
+    list-style: none;
+    font:12px "Bonveno", "Century Gothic";
+    padding: 0;
+    margin: 0;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 1px 0 rgba(255,255,255, 0.9) , 0 1px 3px rgba(0,0,0, 0.1);
+    border-radius: 3px;
+
+}
+
+#page_header > nav > ul {
+    padding: 10px 0 0 10px ;
+}
+
+#page_header > nav > ul > li > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0 ;
+
+}
+
+#page_header > nav > ul > li {
+    margin: 0 20px 0 0 ;
+    padding: 0;
+    display: inline-table;
+}
+
+.posts {
+    width: 100%;
+    padding: 10px;
+}
+
+#posts_catalog {
+    float: right;
+    width: 75%;
+    padding: 10px;
+}
+
+.posts aside {
+    float: right;
+    font-size: 20px;
+    line-height: 10px;
+    text-align: justify;
+    padding: 10px 10px 0px 10px;
+    margin-left: 0.3%;
+    max-width: 40%;
+    width: auto;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
+    background-color: #f3f3f3;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+#sidebar {
+    width: 22%;
+}
+
+#sidebar > menu > ul > li {
+    list-style: none;
+    margin: 0 0 15px 0;
+}
+
+/*nav a{
+    padding:13px;
+    text-decoration: none;
+    color:#333;
+    text-shadow: 0 1px #fff;
+    display: block;
+    font-size: 13px;
+}*/
+
+#sidebar > menu > ul > li > a,
+#sidebar > menu > ul > li > ul > li > a,
+#page_header > nav > ul > li > a,
+#page_header > nav > ul > li > ul > li > a {
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: "Bonveno", "Century Gothic", Verdana;
+    color:#333;
+    padding: 0 20px;
+    line-height: 40px;
+    display: block;
+}
+
+nav ul ul, menu ul ul {
+    display: none;
+    position: absolute;
+    list-style: none;
+    background: #aaa;
+    border-radius: 3px;
+}
+
+nav li ul, menu li ul {
+    display: none;
+    height: auto;
+    padding: 0;
+}
+
+.sidebar-menu {
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-menu li ul {
+    margin: -40px 0 0 152px;
+}
+
+nav ul li:hover, menu ul li:hover {
+    background: #aaa;
+    box-shadow:  0px 0px 3px 1px rgba(0, 0, 0, 0.2);
+}
+
+nav ul li:hover > ul, menu ul li:hover > ul {
+    display:  block;
+    box-shadow:  0px 3px 3px 1px rgba(0, 0, 0, 0.2);
+}
+
+nav ul li ul li, menu ul li ul li{
+    text-align: center;
+}
+
+nav ul li:hover > ul li:hover, menu ul li:hover > ul li:hover {
+    box-shadow:  0px 0px 3px 1px rgba(0, 0, 0, 0.2);
+}
+
+#page_header > nav > ul > li:hover, #page_header > nav > ul > li > a:hover {
+    background: #bbb;
+}
+
+#page_header nav li:hover, #sidebar menu li:hover, a:hover {
+    background: #bbb;
+}
+
+    /*  2.  Footer (на всех страницах:)
+            a.  Задать высоту.
+            b.  Поменять цвет фона.
+            c.  Прижать текст “Все права защищены” к правому краю и отодвинуть от верхней и правой границы
+    */
+footer,#page_footer_contacts {
+    position: fixed;
+    bottom: 0;
+    display: block;
+    width: inherit;
+    height: auto;
+    background: rgba(180,180,180, 0.3);
+}
+
+footer p {
+    text-align: right;
+    margin: 10px 10px;
+}
+
+#page_footer_contacts {
+    position: relative;
+}
+
+h2 {
+    display: none;
+}
+
+#long_text {
+    font-size: 15px !important;
+}
+
+#sidebar menu h3 {
+    text-align: center;
+    padding-left: 20px;
+}
+
+/*3.    Страница просмотра товара каталога:
+    a.  Разместить краткое описание товара справа от картинки
+    b.  Добавить кнопку “Купить”
+    c.  Присвоить наведение и нажатие на кнопку “Купить”
+*/
+
+.menu_catalog {
+    float: left;
+    margin-right: 30px;
+}
+
+.menu_catalog ul {
+    content: center;
+}
+
+.menu_catalog li{
+    border: 1px solid #ccc ;
+    /*display: inline-table;*/
+    list-style: none;
+    box-shadow: 0 0 3px 1px rgba(0,0,0,0.2);
+    align-content: center;
+}
+
+#buy_button {
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px 0px rgba(0,0,0,0.3);
+    font:17px "Bonveno", "Century Gothic";
+    font-weight: 600;
+}
+
+#buy_button:hover {
+    box-shadow: 0 0 4px 1px rgba(250,10,110,0.3);
+}
+
+/*
+4.  Страница каталога
+a.  Создать блоки для картинки и ссылки на просмотр товара каталога
+b.  Расположить элементы каталога горизонтально.
+*/
+.img_block {
+    display: inline-block;
+}
+
+.img_block img {
+    border: 2px solid grey;
+    border-radius: 5px;
+}
+
+.product_short_desc {
+    color: #707070;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+}
+
+.product_desc {
+    color: #181313;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+p.product_desc:first-letter {
+    color: black;
+    font-family: "Times New Roman", serif;
+    font-size: 300%;
+}
+
+ol li{
+    list-style-image: url(img/marker.png);
+}
+
+input[type=email]:focus {
+    color:  #E75454;
+}
+
+input[type=text] {
+    text-transform:  capitalize;
+}
+
+table {
+    border: 1px solid black;
+    border-bottom: 1px solid rgba(0,0,0,0.0);
+    border-right: 1px solid rgba(0,0,0,0.0);
+}
+
+tr, td {
+    padding: 3px;
+}
+
+tr {
+    color: #333;
+    border:1px solid rgba(0,0,0,0.0);
+}
+
+td {
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+}
+
+tr.even {
+    background: #f8f8f8;
+}
+
+tr.not_even {
+    background: #8f8f8f;
+}
+
+td[colspan], td[rowspan] {
+    text-align: center;
+}
+
+#table_header {
+    font-weight: bold;
+    font-size: 115%;
+    color: #f8f8f8;
+    background: black;
+}
+
+/* экспериментальная штука с изменением расчёта отступов */
+#page_header {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* начало слайдера */
+.wrapper_slider {
+    height: 100px;
+    margin: 10px auto 0;
+    position: relative;
+    width: 850px;
+    margin-bottom: 50px ;
+}
+
+.slider {
+    background: #ddd;
+    height: inherit;
+    width: inherit;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.wrapper_slider > input {
+    display: none;
+}
+
+.slides {
+    height: inherit;
+    width: inherit;
+    position: absolute;
+    opacity: 0;
+    z-index: 0;
+    transform: translateY(0px);
+    transition: transform ease-in-out 0.5s, opacity ease-in-out 0.5s;
+}
+
+.slide_1 {
+    background-image: linear-gradient(90deg, grey, white);
+}
+
+.slide_2 {
+    background-image: linear-gradient(90deg, green, white);
+}
+
+.slide_3 {
+    background-image: linear-gradient(90deg, red, white);
+}
+
+.slide_4 {
+    background-image: linear-gradient(90deg, yellow, white);
+}
+
+.slide_5 {
+    background-image: linear-gradient(90deg, purple, white);
+}
+
+.wrapper_slider .controls {
+    left: 50%;
+    margin-left: -98px;
+    position: absolute;
+}
+
+.wrapper_slider label {
+    cursor: pointer;
+    display: inline-block;
+    height: 8px;
+    width: 8px;
+    margin: 25px 12px 0 16px;
+    position: relative;
+    border-radius: 50%;
+    transition: background ease-in-out 0.5s;
+}
+
+.wrapper_slider label:after {
+    border: 2px solid #ddd;
+    content: " ";
+    display: block;
+    height: 12px;
+    width: 12px;
+    left:  -4px;
+    top: -4px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.wrapper_slider label:hover,
+#slide_1:checked ~ .controls label:nth-of-type(1),
+#slide_2:checked ~ .controls label:nth-of-type(2),
+#slide_3:checked ~ .controls label:nth-of-type(3),
+#slide_4:checked ~ .controls label:nth-of-type(4),
+#slide_5:checked ~ .controls label:nth-of-type(5) {
+    background: #ddd;
+}
+
+#slide_1:checked ~ .slider > .slide_1,
+#slide_2:checked ~ .slider > .slide_2,
+#slide_3:checked ~ .slider > .slide_3,
+#slide_4:checked ~ .slider > .slide_4,
+#slide_5:checked ~ .slider > .slide_5 {
+    opacity: 1;
+    z-index: 1;
+    transform: translateX(0px);
+}
+/* конец слайдера */
+
+

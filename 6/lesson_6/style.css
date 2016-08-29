@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/* Данная конструкция не работает */
+/* @font-face {
+    font-family: Roboto,
+                 Roboto-BlackItalic,
+                 Raleway-Bold,
+                 Raleway-Heavy,
+                 Raleway-ExtraBold;
+    src: url(fonts/RobotoRegular/RobotoRegular.ttf),
+         url(fonts/Roboto-BlackItalic.ttf),
+         url(fonts/Raleway-Bold.ttf),
+         url(fonts/Raleway-Heavy.ttf),
+         url(fonts/Raleway-ExtraBold.ttf);
+} */
+
+@font-face {
+    font-family: Roboto;
+    src: url(fonts/RobotoRegular/RobotoRegular.ttf);
+}
+
+@font-face {
+    font-family: Roboto Bk;
+    src: url(fonts/Roboto-BlackItalic.ttf);
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url(fonts/Raleway-Bold.ttf);
+}
+
+
+html, body {
+    height: 100%;
+    font-family: Roboto;
+    font-size: small;
+}
+
+main {
+    margin: 0 auto;
+    width: 1500px;
+    height: 3365px;
+    background-color: #f8f8f8;
+    font-size: 120%;
+}
+
+header {
+    background-color:  #abeafa;
+    height: 700px;
+}
+
+a {
+    text-decoration: none;
+    border: none;
+}
+
+#logo {
+    padding: 0;
+    margin: 24px 792px 0 234px;
+    float: left;
+}
+
+#facebook {
+    padding: 0;
+    margin: 50px 15px 0 0;
+}
+
+#twitter {
+    padding: 0;
+    margin: 50px 11px 0 0;
+}
+
+#youtube {
+    padding: 0;
+    margin: 50px 12px 0 0;
+}
+
+#pinterest, #instagram {
+    padding: 0;
+    margin: 50px 12px 0 0;
+}
+
+
+#logo:hover {
+    transform: scale(1.05);
+}
+
+#facebook:hover,
+#twitter:hover,
+#youtube:hover,
+#pinterest:hover,
+#instagram:hover {
+    transform: scale(1.5);
+}
+
+#yellow_banner {
+    background-color:  #fff51f;
+    width: 270px;
+    height: 300px;
+    padding: 0;
+    margin: 270px 0px 0 165px;
+}
+
+#yellow_banner > p, #yellow_banner > p + p {
+    padding: 82px 0 0 0;
+    margin: 0 46px 24px 25px;
+    font-family: Raleway; /* Шрифт верный, просто название у него такое. В прописанных путях видно */
+    color:  #333333;
+    font-size: 190%;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: left;
+}
+#yellow_banner > p + p {
+    padding: 0;
+    margin: 0 30px 82px 22px;
+    font-size: 110% ;
+    line-height: 14px;
+    font-style: italic;
+}
+
+#advertisement {
+    padding: 0;
+    margin-left: 913px;
+    padding-bottom: 274px;
+    width: 313px;
+    height: 169px;
+}
+
+
+/* #advertisement > p + p {
+    font-size: 110%;
+} */
+
+.content {
+    height: 2317px;
+}
+
+.goods_block {
+    /* border: 1px solid black; */
+    background-color:  #f8f8f8;
+    width: 870px;
+    height: 724px;
+    float:  right;
+    margin: -20px 165px 90px 15px;
+}
+
+aside menu, aside section {
+    background-color:  #26d2fc;
+    width: 270px;
+    height: 475px;
+    float: left;
+    margin: -20px 15px 50px 165px;
+}
+
+menu ul {
+    list-style: none;
+    text-align: left;
+    line-height: 36px;
+}
+
+menu ul li {
+    font-family: Roboto;
+    color: #000000;
+    font-weight: 900;
+    padding-left: 42px;
+    line-height: 37px;
+    text-align: left;
+}
+
+menu h3 {
+    padding-left: 42px;
+    background-color:  #333333;
+    height: 66px;
+    line-height: 66px;
+    margin: 0;
+    text-align: left;
+}
+
+menu ul li:hover, menu h3{
+    background-color: #333333;
+    color:  #ffffff;
+    width: 228px;
+}
+
+
+.banner {
+    background-color:  #e0e0e0;
+    height: 300px;
+}
+
+footer {
+    background-color:  #373737;
+    width: 1500px;
+    height: 348px;
+}

@@ -1,0 +1,27 @@
+.container_12 {
+    background-color: lightgray;
+}
+
+.header {
+    background-color: lightblue;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.menu {
+    background-color: lightcoral;
+    height: 420px;
+    margin-bottom: 20px;
+}
+
+.posts {
+    background-color: gray;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+
+
+.footer {
+    background-color: gray;
+}

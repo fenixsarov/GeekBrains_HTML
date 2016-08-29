@@ -148,7 +148,11 @@ a {
 }
 
 aside menu, aside section {
+<<<<<<< HEAD
     background-color:  #s;
+=======
+    background-color:  #26d2fc;
+>>>>>>> origin/master
     width: 270px;
     height: 475px;
     float: left;

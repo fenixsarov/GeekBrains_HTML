@@ -1,0 +1,23 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	margin: 0 auto;
+	width: 1500px;
+	height: 3365px;
+	background-color: #f8f8f8;
+}
+
+.header {
+	background-color:  #abeafa;
+	width: 1500px;
+	height: 700px;
+}
+
+.footer {
+	background-color:  #373737;
+	width: 1500px;
+	height: 348px;
+}

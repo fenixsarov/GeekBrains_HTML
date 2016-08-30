@@ -199,6 +199,7 @@ a {
     height: 400px;
     float: right;
     margin-top: 0;
+    padding-bottom: 80px;
 }
 
 .goods_block h3 {
@@ -276,17 +277,55 @@ article.align_good_2 {
 
 .brand {
     float: right;
+    display: block;
     width: 1170px;
     height: 26px;
-    margin-top: 167px;
+    margin-top: 30px;
     margin-right: 165px;
+    background-color: #fff;
+    padding-top: 30px;
+    padding-bottom: 28px;
 }
+
 
 .instagram_feed {
     float: right;
     width: 1170px;
     height: 350px;
     margin-right: 165px;
+    background-color: #eaeaea;
+}
+
+.instagram_feed img {
+    float: right;
+    margin-right: 12px;
+    opacity: 0.5;
+}
+
+.instagram_feed img:hover {
+    opacity: 1.0;
+}
+
+img.last_pic_feed {
+    margin-right: 0;
+}
+
+.instagram_feed img[title="instagram_feed"]{
+    float: left;
+    margin: 51px 8px 0 449px;
+    opacity: 1.0;
+}
+
+.instagram_feed p {
+    font-family: Roboto;
+    font-style: italic;
+    text-align: left;
+    font-size: 120%;
+    color:  #333333;
+    line-height: 22px;
+    font-weight: 900;
+    margin-top: 54px;
+    margin-bottom: 29px;
 }
 
 .socials {
@@ -319,7 +358,6 @@ article.align_good_2 {
 .socials > a > img[title="pinterest"] {
     background-color: #cb2027;
     padding: 43px 164px;
-
 }
 
 aside menu, aside section {

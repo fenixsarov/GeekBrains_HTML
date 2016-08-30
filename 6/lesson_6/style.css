@@ -129,16 +129,12 @@ a {
     height: 169px;
 }
 
-
-/* #advertisement > p + p {
-    font-size: 110%;
-} */
-
 .content {
     height: 2317px;
+    background-color: #f8f8f8;
 }
 
-.goods_block {
+.goods_block, .top_goods_block {
     /* border: 1px solid black; */
     background-color:  #f8f8f8;
     width: 870px;
@@ -147,12 +143,70 @@ a {
     margin: -20px 165px 90px 15px;
 }
 
+.top_goods_block {
+    height: 400px;
+}
+
+.sale_goods_block {
+    margin-left: 465px;
+    height: 400px;
+}
+
+.goods_block h3, .top_goods_block h3,
+.sale_goods_block h3{
+    font-style: "Roboto Bk";
+    font-style: italic;
+    font-size: 120%;
+    font-weight: 700;
+    margin: 31px 0 31px 25px;
+    color: #707070;
+}
+
+.goods_block article, .top_goods_block article,
+.sale_goods_block article {
+    background:#fff;
+    width: 270px;
+    height: 320px;
+    display: inline-block;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.goods_block img, .top_goods_block img,
+.sale_goods_block img {
+    padding: 10px 10px 0px 10px;
+}
+
+.goods_block p, .top_goods_block p,
+.sale_goods_block p {
+    display: inline-block;
+    margin-left: 26px;
+    font-style: "Roboto Bk";
+    font-style: italic;
+    font-size: 80%;
+    font-weight: 700;
+    max-width: 123px;
+    height: 29px;
+
+}
+.goods_block p+p, .top_goods_block p+p,
+.sale_goods_block p+p {
+    display: inline-block;
+    float: right;
+    font-size: 100%;
+    margin-right: 10px;
+}
+
+article.align_good_1 {
+    margin-right: 26px;
+}
+
+article.align_good_2 {
+    margin-right: 26px;
+}
+
 aside menu, aside section {
-<<<<<<< HEAD
-    background-color:  #s;
-=======
     background-color:  #26d2fc;
->>>>>>> origin/master
     width: 270px;
     height: 475px;
     float: left;

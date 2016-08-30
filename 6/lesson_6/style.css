@@ -62,22 +62,22 @@ a {
     float: left;
 }
 
-#facebook {
+.facebook {
     padding: 0;
     margin: 50px 15px 0 0;
 }
 
-#twitter {
+.twitter {
     padding: 0;
     margin: 50px 11px 0 0;
 }
 
-#youtube {
+.youtube {
     padding: 0;
     margin: 50px 12px 0 0;
 }
 
-#pinterest, #instagram {
+.pinterest, .instagram, .tumblr, .rss, .google_plus {
     padding: 0;
     margin: 50px 12px 0 0;
 }
@@ -87,55 +87,85 @@ a {
     transform: scale(1.05);
 }
 
-#facebook:hover,
-#twitter:hover,
-#youtube:hover,
-#pinterest:hover,
-#instagram:hover {
+.facebook:hover,
+.twitter:hover,
+.youtube:hover,
+.pinterest:hover,
+.instagram:hover,
+.tumblr:hover,
+.rss:hover,
+.google_plus:hover {
     transform: scale(1.5);
 }
 
 #yellow_banner {
+    display: inline-block;
     background-color:  #fff51f;
     width: 270px;
     height: 300px;
-    padding: 0;
-    margin: 270px 0px 0 165px;
+    margin: 201px 0 0 165px;
+
 }
 
-#yellow_banner > p, #yellow_banner > p + p {
-    padding: 82px 0 0 0;
-    margin: 0 46px 24px 25px;
-    font-family: Raleway; /* Шрифт верный, просто название у него такое. В прописанных путях видно */
-    color:  #333333;
+#yellow_banner > p {
+    color: #333333;
+    font-family: Raleway;
     font-size: 190%;
-    font-weight: 700;
     line-height: 30px;
-    text-align: left;
+    font-weight: 700;
+    padding: 0;
+    margin: 82px 46px 0 25px;
 }
 #yellow_banner > p + p {
-    padding: 0;
-    margin: 0 30px 82px 22px;
-    font-size: 110% ;
-    line-height: 14px;
+    font-size: 110%;
     font-style: italic;
+    line-height: 14px;
+    margin: 24px 30px 82px 22px;
 }
 
 #advertisement {
-    padding: 0;
-    margin-left: 913px;
-    padding-bottom: 274px;
+    display: inline-block;
     width: 313px;
     height: 169px;
+    float: right;
+    padding: 0;
+    margin: 108px 274px 0 0;
+    color: #fff51f;
+    font-size: 300%;
+    font-family: Roboto;
+    font-weight: 700;
+    line-height: 37px;
+}
+/*Перепроверить*/
+#advertisement > p + p {
+    font-size: 40%;
+    line-height: 20px;
+    font-weight: 300;
+    padding-top: 5px;
 }
 
+.buy_button {
+    float: right;
+    width: 124px;
+    height: 49px;
+    background-color: #fff51f;
+    font-family: Raleway;
+    font-size: 40%;
+    padding: 0;
+    margin: 78px 186px 0 481px;
+}
 
-/* #advertisement > p + p {
-    font-size: 110%;
-} */
+.buy_button:hover {
+    box-shadow: inset 0px 0px 4px rgba(0,0,0,0.4);
+}
+
+.buy_button:active {
+    background-color: #b5b515;
+}
 
 .content {
     height: 2317px;
+    background-color: #f8f8f8;
 }
 
 .goods_block {
@@ -144,7 +174,152 @@ a {
     width: 870px;
     height: 724px;
     float:  right;
-    margin: -20px 165px 90px 15px;
+    margin: -20px 165px 0px 15px;
+}
+
+.goods_block {
+    margin-bottom: 70px;
+}
+
+.top_goods_block {
+    background-color:  #f8f8f8;
+    width: 870px;
+    height: 400px;
+    float: right;
+    margin-top: 0px;
+    margin-right: 165px;
+    margin-bottom: 50px;
+    margin-left:15px;
+}
+
+.sale_goods_block {
+    margin-right: 165px;
+    background-color:  #f8f8f8;
+    width: 870px;
+    height: 400px;
+    float: right;
+    margin-top: 0;
+}
+
+.goods_block h3 {
+    font-face: "Roboto Bk";
+    font-style: italic;
+    font-size: 140%;
+    font-weight: 700;
+    margin: 31px 0 41px 25px;
+    color: #707070;
+}
+
+.top_goods_block h3,
+.sale_goods_block h3 {
+    font-face: "Roboto Bk";
+    font-style: italic;
+    font-size: 140%;
+    font-weight: 700;
+    color: #707070;
+    margin-left: 25px;
+}
+
+.top_goods_block h3 {
+    margin-top: 70px;
+    margin-bottom: 43px;
+}
+
+.sale_goods_block h3 {
+    margin-top: 81px;
+    margin-bottom: 42px;
+}
+
+.goods_block article, .top_goods_block article,
+.sale_goods_block article {
+    background:#fff;
+    width: 270px;
+    height: 320px;
+    display: inline-block;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.goods_block img, .top_goods_block img,
+.sale_goods_block img {
+    padding: 10px 10px 0px 10px;
+}
+
+.goods_block p, .top_goods_block p,
+.sale_goods_block p {
+    display: inline-block;
+    margin-left: 26px;
+    font-style: "Roboto Bk";
+    font-style: italic;
+    font-size: 80%;
+    font-weight: 700;
+    max-width: 123px;
+    height: 29px;
+    line-height: 14px;
+
+}
+.goods_block p+p, .top_goods_block p+p,
+.sale_goods_block p+p {
+    display: inline-block;
+    float: right;
+    font-size: 100%;
+    margin-right: 10px;
+}
+
+article.align_good_1 {
+    margin-right: 26px;
+}
+
+article.align_good_2 {
+    margin-right: 26px;
+}
+
+.brand {
+    float: right;
+    width: 1170px;
+    height: 26px;
+    margin-top: 167px;
+    margin-right: 165px;
+}
+
+.instagram_feed {
+    float: right;
+    width: 1170px;
+    height: 350px;
+    margin-right: 165px;
+}
+
+.socials {
+    float: right;
+    width: 1170px;
+    height: 150px;
+    margin-right: 165px;
+}
+
+.socials > a {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    max-width: 387px;
+    height: 150px;
+}
+
+.socials > a > img[title="facebook"] {
+    background-color: #3b5997;
+    padding: 44px 181px;
+    margin: 0;
+}
+
+.socials > a > img[title="twitter"] {
+    background-color: #3fccfd;
+    padding: 49px 164px;
+    margin: 0;
+}
+
+.socials > a > img[title="pinterest"] {
+    background-color: #cb2027;
+    padding: 43px 164px;
+
 }
 
 aside menu, aside section {
@@ -191,8 +366,78 @@ menu ul li:hover, menu h3{
     height: 300px;
 }
 
+.banner p {
+    font-family: Raleway;
+    width: 109px;
+    height: 98px;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 195%;
+    text-align: left;
+    padding: 0;
+    margin: 129px 19px 73px 142px;
+}
+
 footer {
     background-color:  #373737;
     width: 1500px;
     height: 348px;
+    color: #fff;
+    /*padding: 75px 191px 0 192px;*/
+}
+
+footer nav {
+    margin: 0 150px 0 150px;
+    text-align: left;
+    height: 301px;
+    width: 1200px;
+}
+
+footer ul {
+    display: inline-block;
+    list-style: none;
+    font-family: Raleway;
+    font-size: 140%;
+    margin-top: 75px;
+    padding-right: 90px;
+    text-align: left;
+}
+
+footer ul li {
+    font-size: 55%;
+    font-family: Roboto;
+    text-align: left;
+    margin-top: 5px;
+}
+
+#about li{
+    width: 232px;
+    margin-top: 10px;
+}
+
+footer > p {
+    height: 47px;
+    line-height: 47px;
+    font-size: 80%;
+    padding-left: 150px;
+    background-color: #333333;
+}
+
+footer > p > a > img.facebook,
+footer > p > a > img.twitter,
+footer > p > a > img.pinterest,
+footer > p > a > img.google_plus,
+footer > p > a > img.tumblr,
+footer > p > a > img.instagram,
+footer > p > a > img.rss{
+    margin-top: 1%;
+    float: right;
+}
+
+footer > p > a > img.google_plus {
+    margin-top: 1.2%;
+}
+
+footer > p > a > img.rss {
+    margin-right: 191px;
 }

@@ -17,20 +17,52 @@
 } */
 
 @font-face {
-    font-family: Roboto;
+    font-family: "Roboto";
     src: url(fonts/RobotoRegular/RobotoRegular.ttf);
+
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: Roboto Bk;
-    src: url(fonts/Roboto-BlackItalic.ttf);
+    font-family: "Roboto";
+    src: url("fonts/Roboto-BlackItalic.ttf");
+
+    font-weight: 900;
+    font-style: italic;
 }
 
 @font-face {
-    font-family: Raleway;
+    font-family: "Roboto";
+    src: url("fonts/Roboto-Black.ttf");
+
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Raleway";
     src: url(fonts/Raleway-Bold.ttf);
+
+    font-weight: 800;
+    font-style: normal;
 }
 
+@font-face {
+    font-family: "Raleway";
+    src: url(fonts/Raleway-Heavy.ttf);
+
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url(fonts/Raleway-ExtraBold.ttf);
+
+    font-weight: 900;
+    font-style: normal;
+}
 
 html, body {
     height: 100%;
@@ -132,7 +164,7 @@ a {
     margin: 108px 274px 0 0;
     color: #fff51f;
     font-size: 300%;
-    font-family: Roboto;
+    font-family: Raleway;
     font-weight: 700;
     line-height: 37px;
 }
@@ -140,7 +172,7 @@ a {
 #advertisement > p + p {
     font-size: 40%;
     line-height: 20px;
-    font-weight: 300;
+    font-weight: 200;
     padding-top: 5px;
 }
 
@@ -149,8 +181,10 @@ a {
     width: 124px;
     height: 49px;
     background-color: #fff51f;
-    font-family: Raleway;
-    font-size: 40%;
+    font-family: "Raleway";
+    font-weight: 900;
+    font-size: 30%;
+    color: #000;
     padding: 0;
     margin: 78px 186px 0 481px;
 }
@@ -203,7 +237,7 @@ a {
 }
 
 .goods_block h3 {
-    font-face: "Roboto Bk";
+    font-family: "Roboto";
     font-style: italic;
     font-size: 140%;
     font-weight: 700;
@@ -213,10 +247,10 @@ a {
 
 .top_goods_block h3,
 .sale_goods_block h3 {
-    font-face: "Roboto Bk";
+    font-family: "Roboto";
     font-style: italic;
     font-size: 140%;
-    font-weight: 700;
+    font-weight: 900;
     color: #707070;
     margin-left: 25px;
 }
@@ -250,7 +284,7 @@ a {
 .sale_goods_block p {
     display: inline-block;
     margin-left: 26px;
-    font-style: "Roboto Bk";
+    font-family: "Roboto";
     font-style: italic;
     font-size: 80%;
     font-weight: 700;
@@ -397,7 +431,6 @@ menu ul li:hover, menu h3{
     color:  #ffffff;
     width: 228px;
 }
-
 
 .banner {
     background-color:  #e0e0e0;

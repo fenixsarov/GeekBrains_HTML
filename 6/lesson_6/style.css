@@ -2,19 +2,6 @@
     margin: 0;
     padding: 0;
 }
-/* Данная конструкция не работает */
-/* @font-face {
-    font-family: Roboto,
-                 Roboto-BlackItalic,
-                 Raleway-Bold,
-                 Raleway-Heavy,
-                 Raleway-ExtraBold;
-    src: url(fonts/RobotoRegular/RobotoRegular.ttf),
-         url(fonts/Roboto-BlackItalic.ttf),
-         url(fonts/Raleway-Bold.ttf),
-         url(fonts/Raleway-Heavy.ttf),
-         url(fonts/Raleway-ExtraBold.ttf);
-} */
 
 @font-face {
     font-family: "Roboto";
@@ -394,12 +381,24 @@ img.last_pic_feed {
     padding: 43px 164px;
 }
 
+/* Боковое меню */
 aside menu, aside section {
     background-color:  #26d2fc;
     width: 270px;
     height: 475px;
     float: left;
     margin: -20px 15px 50px 165px;
+}
+
+menu a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.indent_corner {
+    display: none;
+    padding: 0;
+    margin: 0;
 }
 
 menu ul {
@@ -417,6 +416,14 @@ menu ul li {
     text-align: left;
 }
 
+
+menu ul li:hover, menu h3{
+    background-color: #333333;
+    color:  #ffffff;
+    width: 228px;
+    height: 36px;
+}
+
 menu h3 {
     padding-left: 42px;
     background-color:  #333333;
@@ -426,10 +433,62 @@ menu h3 {
     text-align: left;
 }
 
-menu ul li:hover, menu h3{
-    background-color: #333333;
-    color:  #ffffff;
-    width: 228px;
+.submenu, .subsubmenu {
+    display: none;
+    padding: 0;
+}
+
+.menu > li > ul > li {
+    list-style-type: none;
+}
+
+.menu > li:hover ul {
+    display: block;
+    position: absolute;
+    background-color:  #75e3fe;
+}
+
+.menu > li > ul {
+    width: 155px;
+    height: 162px;
+    margin-left: 228px;
+    margin-top: -36px;
+    text-align: left;
+}
+
+.menu > li > ul > li:hover {
+    background-color: #75e3fe;
+    color:  #000;
+    width: 115px;
+    height: 40px;
+}
+
+.menu > li > ul > li:hover ul {
+    display: block;
+    position: absolute;
+}
+
+.menu > li > ul > li:hover  img {
+    display: block;
+    float: right;
+    padding: 11px 0;
+}
+
+.menu > li > ul > li > ul {
+    background-color:  #81e6ff;
+    width: 165px;
+    height: 80px;
+    margin-left: 140px;
+    margin-top: -38px;
+}
+
+.menu > li > ul > li,
+.menu > li > ul > li > ul > li {
+    list-style-type: square;
+    list-style-position: inside;
+    text-align: left;
+    line-height: 40px;
+    padding-left: 14px;
 }
 
 .banner {

@@ -1,0 +1,222 @@
+@font-face {
+    font-family: "Roboto";
+    src: url('fonts/Roboto/Roboto-Regular.ttf');
+
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url('fonts/Roboto/Roboto-Black.ttf');
+
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url('fonts/Roboto/Roboto-Bold.ttf');
+
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url('fonts/Raleway/Raleway-Regular.ttf');
+
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    font-family: "Roboto", sans-serif;
+}
+
+main {
+    width: 1500px;
+    margin: 0 auto;
+    min-height: 100%;
+    background-color: #f8f8f8;
+}
+
+.header_map {
+    height: 350px;
+    background-color: #abeafa;
+}
+
+.content {
+    padding: 0 165px 0 165px;
+}
+
+.left_block {
+    width:  270px;
+    float: left;
+    position: relative;
+    margin-right: 30px;
+}
+
+menu {
+    width:  270px;
+    background-color: #26d2fc;
+    margin-bottom: 30px;
+}
+
+menu .heading_nav {
+    background-color: #333;
+    max-height: 80px;
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    padding: 42px 188px 24px 42px;
+}
+
+menu li a {
+    text-decoration: none;
+    color:  #000000;
+}
+
+menu li {
+    list-style-type: none;
+    text-transform: uppercase;
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 36px;
+    text-align: left;
+    padding-left: 40px;
+}
+
+menu ul li:hover {
+    background-color: #333;
+    color: #ffffff;
+}
+
+.now_is_open {
+    background-color:  #eaeaea;
+    width: 270px;
+    height: 300px;
+}
+
+footer {
+    background-color: #373737;
+    width: 1500px;
+    height: 348px;
+    margin: 0 auto;
+    clear: both;
+}
+
+/* styles for contact-page */
+
+.center_block_contacts {
+    height: 604px;
+    width: 694px;
+    float: left;
+}
+
+.center_block_contacts .link_box {
+    margin: 12px 0 80px 0;
+    padding-left: 14px
+}
+
+.center_block_contacts .link_box a{
+    font-family: Roboto;
+    color:  #989898;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;
+}
+
+.center_block_contacts > div .link_contacts {
+    height: 20px;
+    background-color:  #faef03;
+    line-height: 20px;
+    padding: 3px 2px;
+}
+
+.left_block_contacts {
+    position: static;
+    margin-right: 41px;
+}
+
+.form_left {
+    width: 373px;
+    height: 485px;
+    float: left;
+}
+
+.form_left form span {
+    font-family: Roboto;
+    color:  #333333;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    padding-left: 3px;
+
+}
+
+.form_left form input {
+    border-style: solid;
+    border-width: 1px;
+    border-color:  #efefef;
+    box-sizing: border-box;
+    background-color:  #ffffff;
+    width: 350px;
+    height: 27px;
+    font-family: Roboto;
+    color:  #aaaaaa;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: left;
+    padding-left: 16px;
+    margin-top: 4px;
+    margin-bottom: 29px;
+}
+
+.form_left form textarea {
+    width: 350px;
+    height: 150px;
+    border-style: solid;
+    border-width: 1px;
+    border-color:  #efefef;
+    box-sizing: border-box;
+    background-color:  #ffffff;
+    margin-top: 10px;
+}
+
+.vertical_line {
+    width: 1px;
+    height: 330px;
+    background-color:  rgba(167, 167, 167, 0.8);
+    margin-top: 72px;
+    float: left;
+}
+
+.address_right {
+    width: 298px;
+    height: 458px;
+    float: left;
+}
+
+.address_right .heading {
+    font-family: Roboto;
+    color:  #353535;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 14px;
+    text-align: left;
+}
+
+.clear {
+    clear: both;
+}

@@ -139,7 +139,7 @@ main {
 menu {
     width:  270px;
     background-color: #26d2fc;
-    margin-bottom: 62px;
+    margin-bottom: 68px;
 }
 
 menu .heading_nav p {
@@ -277,7 +277,7 @@ footer > p {
 
 .pinterest, .instagram, .tumblr, .rss, .google_plus {
     padding: 0;
-    margin: 50px 12px 0 0;
+    margin: 50px 14px 0 0;
 }
 
 
@@ -313,19 +313,19 @@ footer > p > a > img.google_plus {
 }
 
 footer > p > a > img.rss {
-    margin-right: 191px;
+    margin-right: 187px;
 }
 
 footer > nav > div {
     float: left;
-    padding-top: 75px;
+    padding-top: 70px;
     margin-bottom: 65px;
 }
 
 footer > nav > div > h3  {
     font-family: "Raleway";
     font-weight: 700;
-    margin-bottom: 30px;
+    margin-bottom: 27px;
 }
 
 footer .category {
@@ -337,12 +337,12 @@ footer .account {
 }
 
 footer .support {
-    margin-left: 83px;
+    margin-left: 87px;
 }
 
 footer .newsletter {
-    width: 195px;
-    margin-left: 56px;
+    width: 204px;
+    margin-left: 71px;
 }
 
 footer .newsletter h3 {
@@ -353,7 +353,7 @@ footer .newsletter h3 {
 footer .newsletter .footer_email_box {
     width: 255px;
     height: 30px;
-    margin-top: 20px;
+    margin-top: 15px;
     font-family: Roboto;
     font-weight: 600;
 }
@@ -385,8 +385,8 @@ footer .newsletter .footer_email_box input[type="submit"] {
 footer .newsletter .payment_ico_box {
     width: 276px;
     height: 22px;
-    margin-top: 40px;
-    margin-left: -5px;
+    margin-top: 43px;
+    margin-left: -7px;
 }
 
 footer .newsletter .payment_ico_box img {
@@ -400,7 +400,7 @@ footer .newsletter .payment_ico_box img:hover {
 
 footer .about {
     width: 232px;
-    margin-left: 108px;
+    margin-left: 99px;
 }
 
 footer .about h3 {
@@ -408,22 +408,27 @@ footer .about h3 {
 }
 
 footer > nav > div > ul {
-    font-size: 11px;
+    font-size: 12px;
     list-style: none;
 }
 
 footer .footer_big_text,
 footer .footer_phone,
 footer .footer_email {
-    font-size: 11px;
+    font-size: 12px;
+    line-height: 14px;
     font-family: Roboto;
-    font-weight: 400px;
+    font-weight: 400;
 }
 
 footer .footer_phone,
 footer .footer_email {
     font-size: 14px;
-    margin-top: 8px;
+    margin-top: 5px;
+}
+
+footer .footer_email {
+    margin-top: 13px;
 }
 
 footer .footer_phone p {

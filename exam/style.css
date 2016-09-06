@@ -8,6 +8,14 @@
 
 @font-face {
     font-family: "Roboto";
+    src: url('fonts/Roboto/Roboto-Bold.ttf');
+
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto";
     src: url('fonts/Roboto/Roboto-Black.ttf');
 
     font-weight: 900;
@@ -27,6 +35,14 @@
     src: url('fonts/Raleway/Raleway-Regular.ttf');
 
     font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url('fonts/Raleway/Raleway-ExtraBold.ttf');
+
+    font-weight: 700;
     font-style: normal;
 }
 
@@ -57,11 +73,52 @@ main {
 
 .header_map {
     height: 350px;
-    /* background-color: #abeafa; */
-    /* background-image: url('img/maps.jpg'); */
+     /*background-color: #abeafa;*/
+     background-image: url('img/maps.jpg');
 }
 
- .map_in_header {
+.header_map .header_logo {
+    float: left;
+    padding: 24px 0 0 234px;
+}
+
+.header_map .ico_header_container {
+    width: 200px;
+    height: 35px;
+    margin-top: 40px;
+    margin-left: 768px;
+    background-color: #c9c9c9;
+    float: left;
+    opacity: 0.85;
+}
+
+
+
+/*.header_map .ico_header_container a {
+    float: left;
+}*/
+/*.facebook_header_ico img {
+    opacity: 1.0;
+}*/
+
+.facebook_header_ico,
+.twitter_header_ico,
+.youtube_header_ico,
+.pinterest_header_ico,
+.instagram_header_ico {
+    padding: 0;
+    margin: 0;
+    float: left;
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-bottom: -10px;
+}
+
+/*.header_map .facebook_header_ico {
+    margin-left: 792px;
+}*/
+
+.map_in_header {
     -webkit-filter: grayscale(1);
     filter: gray;
     filter: grayscale(1);
@@ -82,7 +139,7 @@ main {
 menu {
     width:  270px;
     background-color: #26d2fc;
-    margin-bottom: 68px;
+    margin-bottom: 62px;
 }
 
 menu .heading_nav p {
@@ -117,6 +174,9 @@ menu li {
 
 menu ul li:hover {
     background-color: #333;
+}
+
+menu ul li:hover a {
     color: #ffffff;
 }
 
@@ -146,36 +206,36 @@ menu ul li:hover {
     height: 150px;
 }
 
-.icons_big .facebook {
+.icons_big .big_facebook {
     background-color:  #3b5997;
     width: 390px;
     height: 150px;
     float: left;
 }
 
-.icons_big .facebook img[alt="facebook"] {
+.icons_big .big_facebook img[alt="facebook"] {
     margin: 44px 180px;
 }
 
-.icons_big .twitter {
+.icons_big .big_twitter {
     background-color:  #3fccfd;
     width: 390px;
     height: 150px;
     float: left;
 }
 
-.icons_big .twitter img[alt="twitter"] {
+.icons_big .big_twitter img[alt="twitter"] {
     margin: 49px 163px  ;
 }
 
-.icons_big .pinterest {
+.icons_big .big_pinterest {
     background-color:  #cb2027;
     width: 390px;
     height: 150px;
     float: left;
 }
 
-.icons_big .pinterest img[alt="pinterest"] {
+.icons_big .big_pinterest img[alt="pinterest"] {
     margin: 43px 163px  ;
 }
 
@@ -185,6 +245,203 @@ footer {
     height: 348px;
     margin: 0 auto;
     clear: both;
+
+    font-family: "Roboto";
+    font-weight: 400;
+    color: #fff;
+}
+
+footer > p {
+    height: 47px;
+    line-height: 47px;
+    font-size: 14px;
+    padding-left: 171px;
+    background-color: #333333;
+    /*margin-top: 64px;*/
+}
+
+.facebook {
+    padding: 0;
+    margin: 50px 15px 0 0;
+}
+
+.twitter {
+    padding: 0;
+    margin: 50px 11px 0 0;
+}
+
+.youtube {
+    padding: 0;
+    margin: 50px 12px 0 0;
+}
+
+.pinterest, .instagram, .tumblr, .rss, .google_plus {
+    padding: 0;
+    margin: 50px 12px 0 0;
+}
+
+
+.facebook_header_ico:hover,
+.twitter_header_ico:hover,
+.youtube_header_ico:hover,
+.pinterest_header_ico:hover,
+.instagram_header_ico:hover,
+.facebook:hover,
+.twitter:hover,
+.youtube:hover,
+.pinterest:hover,
+.instagram:hover,
+.tumblr:hover,
+.rss:hover,
+.google_plus:hover {
+    transform: scale(1.5);
+}
+
+footer > p > a > img.facebook,
+footer > p > a > img.twitter,
+footer > p > a > img.pinterest,
+footer > p > a > img.google_plus,
+footer > p > a > img.tumblr,
+footer > p > a > img.instagram,
+footer > p > a > img.rss{
+    margin-top: 1%;
+    float: right;
+}
+
+footer > p > a > img.google_plus {
+    margin-top: 1.2%;
+}
+
+footer > p > a > img.rss {
+    margin-right: 191px;
+}
+
+footer > nav > div {
+    float: left;
+    padding-top: 75px;
+    margin-bottom: 65px;
+}
+
+footer > nav > div > h3  {
+    font-family: "Raleway";
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+footer .category {
+    margin-left: 192px;
+}
+
+footer .account {
+    margin-left: 114px;
+}
+
+footer .support {
+    margin-left: 83px;
+}
+
+footer .newsletter {
+    width: 195px;
+    margin-left: 56px;
+}
+
+footer .newsletter h3 {
+    margin-bottom: 5px;
+}
+
+
+footer .newsletter .footer_email_box {
+    width: 255px;
+    height: 30px;
+    margin-top: 20px;
+    font-family: Roboto;
+    font-weight: 600;
+}
+
+footer .newsletter .footer_email_box input[type="text"] {
+    width: 164px;
+    height: 30px;
+    float: left;
+    background-color: #fff51f;
+    text-transform: uppercase;
+    padding-left: 16px;
+    border: none;
+    font-family: Roboto;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+
+footer .newsletter .footer_email_box input[type="submit"] {
+    width: 71px;
+    height: 30px;
+    float: left;
+    text-transform: uppercase;
+    background-color: #000;
+    color: #fff;
+    border: none;
+}
+
+footer .newsletter .payment_ico_box {
+    width: 276px;
+    height: 22px;
+    margin-top: 40px;
+    margin-left: -5px;
+}
+
+footer .newsletter .payment_ico_box img {
+    float: left;
+    margin-right: 10px;
+}
+
+footer .newsletter .payment_ico_box img:hover {
+    transform: scale(1.2);
+}
+
+footer .about {
+    width: 232px;
+    margin-left: 108px;
+}
+
+footer .about h3 {
+    margin-bottom: 5px;
+}
+
+footer > nav > div > ul {
+    font-size: 11px;
+    list-style: none;
+}
+
+footer .footer_big_text,
+footer .footer_phone,
+footer .footer_email {
+    font-size: 11px;
+    font-family: Roboto;
+    font-weight: 400px;
+}
+
+footer .footer_phone,
+footer .footer_email {
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+footer .footer_phone p {
+    float: left;
+    margin-right: 20px;
+}
+
+footer .footer_email p {
+    float: left;
+    margin-right: 25px;
+}
+
+footer .footer_email p+p {
+    color: #c6be11;
+}
+
+footer > nav > div > ul > li {
+    margin-bottom: 3px;
 }
 
 /* styles for contact-page */

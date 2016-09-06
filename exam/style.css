@@ -30,6 +30,14 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: "Raleway";
+    src: url('fonts/Raleway/Raleway-ExtraBoldItalic.ttf');
+
+    font-weight: 800;
+    font-style: italic;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -49,7 +57,14 @@ main {
 
 .header_map {
     height: 350px;
-    background-color: #abeafa;
+    /* background-color: #abeafa; */
+    /* background-image: url('img/maps.jpg'); */
+}
+
+ .map_in_header {
+    -webkit-filter: grayscale(1);
+    filter: gray;
+    filter: grayscale(1);
 }
 
 .content {
@@ -63,21 +78,26 @@ main {
     margin-right: 30px;
 }
 
+
 menu {
     width:  270px;
     background-color: #26d2fc;
-    margin-bottom: 30px;
+    margin-bottom: 68px;
 }
 
-menu .heading_nav {
+menu .heading_nav p {
     background-color: #333;
-    max-height: 80px;
+    height: 0;
     font-family: "Roboto";
     font-size: 14px;
     font-weight: 700;
     color: #fff;
-    padding: 42px 188px 24px 42px;
+    padding: 29px 188px 37px 42px;
 }
+
+/* menu ul {
+    padding-top: 8px;
+} */
 
 menu li a {
     text-decoration: none;
@@ -106,6 +126,59 @@ menu ul li:hover {
     height: 300px;
 }
 
+.now_is_open p {
+    width: 109px;
+    padding-left: 142px;
+    padding-top: 127px;
+
+    text-transform: uppercase;
+    font-family: "Raleway";
+    color:  #333333;
+    font-size: 36px;
+    font-weight: 800;
+    font-style: italic;
+    line-height: 36px;
+    text-align: left;
+}
+
+.icons_big {
+    width: 1170px;
+    height: 150px;
+}
+
+.icons_big .facebook {
+    background-color:  #3b5997;
+    width: 390px;
+    height: 150px;
+    float: left;
+}
+
+.icons_big .facebook img[alt="facebook"] {
+    margin: 44px 180px;
+}
+
+.icons_big .twitter {
+    background-color:  #3fccfd;
+    width: 390px;
+    height: 150px;
+    float: left;
+}
+
+.icons_big .twitter img[alt="twitter"] {
+    margin: 49px 163px  ;
+}
+
+.icons_big .pinterest {
+    background-color:  #cb2027;
+    width: 390px;
+    height: 150px;
+    float: left;
+}
+
+.icons_big .pinterest img[alt="pinterest"] {
+    margin: 43px 163px  ;
+}
+
 footer {
     background-color: #373737;
     width: 1500px;
@@ -117,13 +190,13 @@ footer {
 /* styles for contact-page */
 
 .center_block_contacts {
-    height: 604px;
     width: 694px;
+    height: 949px;
     float: left;
 }
 
 .center_block_contacts .link_box {
-    margin: 12px 0 80px 0;
+    margin: 12px 0 79px 0;
     padding-left: 14px
 }
 
@@ -180,7 +253,7 @@ footer {
     text-align: left;
     padding-left: 16px;
     margin-top: 4px;
-    margin-bottom: 29px;
+    margin-bottom: 28px;
 }
 
 .form_left form textarea {
@@ -203,18 +276,106 @@ footer {
 }
 
 .address_right {
-    width: 298px;
+    width: 250px;
     height: 458px;
     float: left;
+    padding-left: 25px;
+    padding-top: 12px;
+    font-family: Roboto, sans-serif;
 }
 
 .address_right .heading {
-    font-family: Roboto;
     color:  #353535;
     font-size: 18px;
     font-weight: 900;
     line-height: 14px;
     text-align: left;
+
+}
+
+.address_right p, .ico_map_point  {
+    float: left;
+}
+
+.ico_map_point {
+    padding-right: 10px;
+}
+
+.address_right .map_point_p {
+    width: 200px;
+    color:  #777777;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    text-align: left;
+    margin-top: 13px;
+}
+.address_right .address_right_text {
+    width: 185px;
+    margin-top: 9px;
+    color:  #818181;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    text-align: left;
+}
+
+.address_right .phone {
+    color:  #333333;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+    padding-top: 20px;
+    padding-left: 6px;
+}
+
+.address_right .ico_phone {
+    padding-right: 4px;
+}
+
+.address_right .address_email {
+    color:  #333333;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    text-decoration: underline;
+    text-align: left;
+    padding-top: 12px;
+    padding-left: 6px;
+}
+
+.address_right .ico_email {
+    padding-right: 7px;
+    padding-top: 3px;
+    float: left;
+}
+
+.address_right .address_right_big_text {
+    width: 290px;
+    color:  #333333;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    text-align: left;
+    padding-top: 30px;
+    padding-left: 8px;
+}
+
+.brands {
+    background-color:  #ffffff;
+    /* background-image: url('img/brand.jpg'); */
+    width: 870px;
+    height: 160px;
+    clear: both;
+    float: left;
+    margin-top: 66px;
+    margin-left: -10px;
+}
+
+.brands img {
+    margin-top: 69px;
+    margin-left: 81px;
 }
 
 .clear {

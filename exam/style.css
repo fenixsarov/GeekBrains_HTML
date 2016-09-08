@@ -835,3 +835,25 @@ footer > nav > div > ul > li {
     color:  #000000;
 }
 
+/* ////////////////////// */
+/* styles for productpage */
+/* ////////////////////// */
+.content .menu_productpage {
+    margin-bottom: 1140px;
+}
+
+.product_details {
+    width: 870px;
+    height: 600px;
+}
+
+.center_block_products .product_box_header {
+    font-family: Raleway;
+    color:  #333333;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: left;
+    font-style: italic;
+    margin-top: 100px;
+    margin-bottom: 35px;
+}

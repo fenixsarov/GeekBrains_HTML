@@ -664,8 +664,40 @@ footer > nav > div > ul > li {
 /* ////////////////////////// */
 /* styles for shop-cat gridx3 */
 /* ////////////////////////// */
-.center_block_products {
-    height: 2500px;
+
+.header_box .ico_header_container {
+    width: 200px;
+    height: 35px;
+    margin-top: 40px;
+    margin-left: 768px;
+    background: none;
+    float: left;
+    opacity: 0.85;
+}
+
+.header_box .ico_header_container select {
+    font-family: Raleway;
+    color:  #ffffff;
+    font-size: 10px;
+    font-weight: 700;
+    text-align: left;
+    border: none;
+    height: 10px;
+    background: none;
+    padding: 0;
+    margin: 0;
+    float: left;
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-bottom: -10px;
+}
+
+.left_block .menu_products {
+    margin-bottom: 57px;
+}
+
+.container .center_block_products {
+    height: 2000px;
 }
 
 .center_block_products .product_box_1,
@@ -675,8 +707,13 @@ footer > nav > div > ul > li {
 .center_block_products .product_box_5 {
     width: 870px;
     float: left;
-    margin-top: 98px;
-    margin-left: 30px;
+    margin-top: 33px;
+    margin-left: -11px;
+}
+
+.center_block_products .link_box_shop_cat {
+    margin: 31px 0 61px -5px;
+    padding-left: 14px;
 }
 
 .center_block_products .product_box_2,
@@ -703,7 +740,11 @@ footer > nav > div > ul > li {
     background-color: #eaeaea;
 }
 
-.center_block_products .desc {
+.product_box_1 .desc,
+.product_box_2 .desc,
+.product_box_3 .desc,
+.product_box_4 .desc,
+.product_box_5 .desc {
     font-family: Roboto;
     color:  #333333;
     font-size: 14px;
@@ -713,10 +754,21 @@ footer > nav > div > ul > li {
     text-align: left;
     text-transform: uppercase;
     float: left;
-    margin-left: 14px;
+    margin-top: -5px;
+    margin-left: 25px;
+
 }
 
-.center_block_products .cost {
+.product_box_1 .desc {
+    margin-left: 28px;
+    margin-top: 8px;
+}
+
+.product_box_1 .cost,
+.product_box_2 .cost,
+.product_box_3 .cost,
+.product_box_4 .cost,
+.product_box_5 .cost {
     font-family: Roboto;
     color:  #333333;
     font-size: 18px;
@@ -725,6 +777,24 @@ footer > nav > div > ul > li {
     text-align: right;
     float: right;
     margin-right: 14px;
+    margin-top: -4px;
+
+}
+
+.product_box_1 .cost {
+    margin-top: 9px;
+    margin-right: 21px;
+}
+.product_box_1 .last_cost {
+    font-family: Roboto;
+    color:  #e24602;
+    font-size: 14px;
+    font-weight: 900;
+    font-style: italic;
+    margin-top: 1px;
+    margin-left: 181px;
+    float: left;
+    text-decoration: line-through;
 }
 
 .new_product_box,

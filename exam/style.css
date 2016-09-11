@@ -857,3 +857,24 @@ footer > nav > div > ul > li {
     margin-top: 100px;
     margin-bottom: 35px;
 }
+
+
+/* /////////////////////// */
+/* /Styles for index page/ */
+/* /////////////////////// */
+
+.container .center_block_home {
+    height: 2500px;
+}
+
+.content .center_block_home {
+    margin-top:  -20px;
+}
+
+.content .left_block_home {
+    margin-top: -20px;
+}
+
+.content .menu_home {
+    margin-bottom: 30px;
+}

@@ -992,6 +992,7 @@ footer > nav > div > ul > li {
     position: relative;
     margin: 0 auto;
     width: 800px;
+    /* margin-bottom: 100px; */
 }
 
 .tabs_box label {
@@ -1004,7 +1005,7 @@ footer > nav > div > ul > li {
     position: relative;
     top: 2px;
 
-    background-color:  #26d2fc;
+    background-color:  #abeafa;
 
     font-family: Roboto;
     text-align: center;
@@ -1023,7 +1024,7 @@ footer > nav > div > ul > li {
 #tab_1:checked  ~ #tab_l1,
 #tab_2:checked  ~ #tab_l2,
 #tab_3:checked  ~ #tab_l3 {
-    background: #fff;
+    background: #26d2fc;;
     border-color: #fff;
     top: 0;
     z-index: 3;
@@ -1041,6 +1042,7 @@ footer > nav > div > ul > li {
     left: -9999px;
     top: 0;
     opacity: 0;
+    border: 1px solid #808080;
     -moz-transition: opacity .5s ease-in-out;
     -webkit-transition: opacity .5s ease-in-out;
     transition: opacity .5s ease-in-out;

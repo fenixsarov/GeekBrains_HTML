@@ -54,12 +54,20 @@
     font-style: normal;
 }
 
-@font-face {
+/* @font-face {
     font-family: "Raleway";
     src: url('fonts/Raleway/Raleway-ExtraBold.ttf');
 
     font-weight: 700;
     font-style: normal;
+} */
+
+@font-face {
+    font-family: "Raleway";
+    src: url('fonts/Raleway/Raleway-ExtraBoldItalic.ttf');
+
+    font-weight: 700;
+    font-style: italic;
 }
 
 @font-face {
@@ -68,6 +76,14 @@
 
     font-weight: 800;
     font-style: italic;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url('fonts/Raleway/Raleway-ExtraBold.ttf');
+
+    font-weight: 800;
+    font-style: normal;
 }
 
 * {
@@ -1010,7 +1026,7 @@ footer > nav > div > ul > li {
     font-family: Roboto;
     text-align: center;
     color:  #333333;
-    font-size: 10.91px;/* Приближение из-за подстановки шрифтов */
+    font-size: 10.91px;
     font-weight: 400;
     transform: scaleY(1.1);
     text-transform: uppercase;
@@ -1067,11 +1083,96 @@ footer > nav > div > ul > li {
 /* /Styles for index page/ */
 /* /////////////////////// */
 
+.container .home_header_box {
+    height: 700px;
+}
+
+.home_header_box .yellow_banner {
+    width: 270px;
+    height: 300px;
+    float: left;
+    background-color:  #fff51f;
+    margin-top: 201px;
+    margin-left: 165px;
+}
+
+.yellow_banner > h2 {
+    /* width: 200px; */
+    margin: 0 0 24px 25px;
+    padding-top: 82px;
+    font-family: Raleway;
+    color:  #333333;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: left;
+    text-transform: uppercase;
+
+}
+
+.yellow_banner p {
+    /* width: 218px; */
+    margin: 0 30px 0 25px;
+    font-family: Raleway;
+    color:  #333333;
+    font-size: 17px;
+    font-weight: 700;
+    font-style: italic;
+    line-height: 15px;
+    text-align: left;
+}
+
+.home_header_box .header_banner {
+    width: 313px;
+    float: left;
+    margin-left: 478px;
+    margin-top: 108px;
+}
+
+.header_banner h2 {
+    font-family: Raleway;
+    color:  #fff51f;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 34px;
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.header_banner p {
+    font-family: Raleway;
+    color:  #fff51f;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    margin-bottom: 62px;
+}
+.header_banner input[type="button"] {
+    width: 124px;
+    height: 49px;
+    border-style: none;
+    background-color:  #fff51f;
+    font-family: Raleway;
+    color:  #000000;
+    font-size: 14px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.header_banner input[type="button"]:hover {
+    transform: scale(1.05);
+}
+
 .container .center_block_home {
     height: 2500px;
 }
 
 .content .center_block_home {
+    width: 859px;
+/*     height: 724px; */
+    background-color:  #f8f8f8;
     margin-top:  -20px;
 }
 
@@ -1081,4 +1182,93 @@ footer > nav > div > ul > li {
 
 .content .menu_home {
     margin-bottom: 30px;
+}
+
+.center_block_home .home_product_box_1,
+.center_block_home .home_product_box_2 {
+    margin-top: 0;
+    margin-left: 0;
+}
+
+.center_block_home .product_box_header {
+    margin-left: 25px;
+    font-family: Roboto;
+    color:  #707070;
+    font-size: 22px;
+    font-weight: 900;
+    font-style: italic;
+    text-align: left;
+}
+
+.center_block_home .home_product_box_header {
+    margin-top: 31px;
+}
+
+.center_block_home .product_border_line_2 {
+    margin-top: 30px;
+}
+
+.brands_long {
+    width: 1170px;
+    margin-left: 0;
+}
+
+.brands_long img {
+    margin-left: 14px;
+}
+
+.socials_block {
+    width: 1170px;
+    height: 350px;
+    background-color:  #eaeaea;
+}
+
+.socials_block img {
+    margin-right: 12px;
+    float: left;
+}
+
+.socials_block .last_pic {
+    margin-right: 0;
+}
+
+.socials_block  a {
+    margin: 51px 0 26px 449px;
+    display: inline-block;
+}
+
+.socials_block  p,
+.socials_block  img {
+    display: inline-block;
+    align-items: center;
+}
+
+.socials_block a>img:hover {
+    transform: scale(1.05);
+}
+
+.socials_block > img:hover {
+    opacity: 0.5;
+}
+
+.socials_block  p {
+    font-family: Roboto;
+    color:  #333333;
+    font-size: 22px;
+    font-weight: 900;
+    font-style: italic;
+    text-align: left;
+    /* margin-top: 54px; */
+
+}
+
+
+.socials_block  p + p {
+    font-family: Roboto;
+    color:  #333333;
+    font-size: 18px;
+    font-weight: 900;
+    font-style: italic;
+    text-align: left;
+    /* margin-top: 56   px; */
 }
